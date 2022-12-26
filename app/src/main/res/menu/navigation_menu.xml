@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@string/home_string"
+        android:icon="@drawable/ic_home"
+        android:numericShortcut="0"/>
+
+    <item
+        android:id="@+id/discussion"
+        android:title="@string/discussions_string"
+        android:icon="@drawable/ic_discussion"
+        android:numericShortcut="1"/>
+
+    <item android:id="@+id/add"
+        android:title="@string/report_measurement_string"
+        android:icon="@drawable/ic_add_measurement"
+        android:numericShortcut="2"/>
+
+    <item android:id="@+id/notifications"
+        android:title="@string/notifications_string"
+        android:icon="@drawable/ic_notification"
+        android:numericShortcut="3"/>
+
+</menu>

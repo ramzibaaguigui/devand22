@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_next_button_background"
+        android:text="@string/next_string"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/container_selector_bullets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/bullet_1"
+            style="@style/SelectorBulletStyle" />
+
+        <View
+            android:id="@+id/bullet_2"
+            style="@style/SelectorBulletStyle" />
+
+        <View
+            android:id="@+id/bullet_3"
+            style="@style/SelectorBulletStyle" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_selector_bullets_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/bullet_1_selected"
+            style="@style/SelectorBulletSelectedStyle" />
+
+        <View
+            android:id="@+id/bullet_2_selected"
+            style="@style/SelectorBulletSelectedStyle"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/bullet_3_selected"
+            style="@style/SelectorBulletSelectedStyle"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textSize="23sp"
+        android:text="this is another subtext"
+
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/container_selector_bullets"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

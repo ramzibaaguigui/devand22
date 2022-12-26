@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DevFest</string>
+    <string name="next_string">Next</string>
+    <string name="choose_account_type_string">Choose your account type</string>
+    <string name="patient_string">Patient</string>
+    <string name="doctor_string">Doctor</string>
+    <string name="login_string">Login</string>
+    <string name="email_string">Email</string>
+    <string name="password_string">Password</string>
+    <string name="forgot_password_string">Forgot your password?</string>
+    <string name="or_string">or</string>
+    <string name="do_not_have_account_string">Don\'t have an account?</string>
+    <string name="signup_string">Sign up</string>
+    <string name="register_string">Register</string>
+    <string name="first_name_string">First Name</string>
+    <string name="last_name_string">Last Name</string>
+    <string name="gender_string">Gender</string>
+    <string name="full_name_string">Full Name</string>
+    <string name="male_string">Male</string>
+    <string name="female_string">Female</string>
+    <string name="blood_group_string">Blood Group</string>
+    <string name="already_have_account_string">Alrady have an account?</string>
+    <string name="signin_string">Sign in</string>
+    <string name="alerts_string">Alerts</string>
+    <string name="add_measurement_string">Add measurement</string>
+    <string name="degrees_celsius">°C</string>
+    <string name="blood_pressure_string">Blood Pressure</string>
+    <string name="mmhg_string">mmHg</string>
+    <string name="gperl_string">g/l</string>
+    <string name="blood_sugar_level_string">Blood Sugar Level</string>
+    <string name="describe_your_status_string">Describe your status</string>
+    <string name="select_image_video_string">Select your image or video</string>
+    <string name="test_cough_breath_string">Start to test breath or cough</string>
+    <string name="search_string">Search</string>
+    <string name="verify_name_string">Please, verify your name</string>
+    <string name="invalid_gender_string">Please, select a valid gender</string>
+    <string name="invalid_blood_group_string">"Please, select a valid blood group "</string>
+    <string name="select_your_choice_string">Please select your role</string>
+    <string name="register_error_string">An error happened during registration</string>
+    <string name="register_success_string">"You account is created successfully "</string>
+    <string name="address_string">Address</string>
+    <string name="invalid_address_string">Invalid Address</string>
+    <string name="validate_login_entries_string">Verify your login credentials</string>
+    <string name="login_error_string">Login Error</string>
+    <string name="home_string">Home</string>
+    <string name="discussions_string">Discussions</string>
+    <string name="report_measurement_string">Report measurement</string>
+    <string name="notifications_string">Notifications</string>
+    <string name="phone_string">Phone</string>
+
+    <string-array name="gender_entries">
+        <item>@string/gender_string</item>
+        <item>@string/male_string</item>
+        <item>@string/female_string</item>
+    </string-array>
+
+    <string-array name="blood_group_entries">
+        <item>@string/blood_group_string</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

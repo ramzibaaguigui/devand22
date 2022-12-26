@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_discussion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:background="@drawable/shape_circular_image_view"
+        android:src="@color/red_complementary"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintCircleRadius="45dp"/>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_gray_bullet_selected"
+        app:layout_constraintEnd_toEndOf="@id/image_view_discussion"
+        app:layout_constraintTop_toTopOf="@id/image_view_discussion"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_discussion_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       app:layout_constraintTop_toTopOf="@id/image_view_discussion"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_discussion"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/image_view_discussion">
+
+        <TextView
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_discussion_name"
+            tools:text="Doctor name" />
+
+        <TextView
+            tools:text="this is the last message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_last_message" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_view_discussion_time"
+        android:layout_marginEnd="10dp"
+        tools:text="12:78"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/container_discussion_details" />
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/image_view_seen"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_seen"
+        app:layout_constraintEnd_toEndOf="@id/text_view_discussion_time"
+        app:layout_constraintBottom_toBottomOf="@id/container_discussion_details" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="4"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/shape_unread_background"
+        app:layout_constraintTop_toTopOf="@id/image_view_seen"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_seen"
+        app:layout_constraintStart_toStartOf="@id/image_view_seen"
+        app:layout_constraintEnd_toEndOf="@id/image_view_seen"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text_view_unread_count" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

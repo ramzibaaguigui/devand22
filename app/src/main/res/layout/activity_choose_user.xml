@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green_primary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_account_type_string"
+        android:id="@+id/text_view_account_type"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="200dp"
+        android:textColor="@color/white_background"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/container_choices" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/container_choices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout android:id="@+id/container_patient_choice"
+            style="@style/AccountTypeRadioButtonStyle">
+            <TextView
+                android:text="@string/patient_string"
+                style="@style/AccountTypeRadioButtonTextViewStyle" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/image_view_patient"
+                android:background="@drawable/shape_type_radio_button_image_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/container_doctor_choice"
+            style="@style/AccountTypeRadioButtonStyle">
+            <TextView
+                android:text="@string/doctor_string"
+                style="@style/AccountTypeRadioButtonTextViewStyle" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/image_view_doctor"
+                android:background="@drawable/shape_type_radio_button_image_background"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/button_next"
+        android:textAlignment="center"
+        android:text="@string/next_string"
+        android:textColor="@color/green_primary"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_next_button_white_background" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

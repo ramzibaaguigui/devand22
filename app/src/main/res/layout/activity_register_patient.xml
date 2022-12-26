@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:background="@color/white_background">
+
+    <TextView
+        android:id="@+id/text_view_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/register_string"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image_view_secure"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/img_secure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_view_register" />
+
+    <LinearLayout
+        android:id="@+id/container_full_name"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_secure">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            style="@style/LoginInputFieldIconImageViewStyle"
+            android:src="@drawable/ic_person" />
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:hint="First/Last"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_address"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_full_name">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            style="@style/LoginInputFieldIconImageViewStyle"
+            android:src="@drawable/ic_person" />
+
+        <EditText
+            android:id="@+id/edit_text_address"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:hint="@string/address_string"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/container_phone"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_address">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            style="@style/LoginInputFieldIconImageViewStyle"
+            android:src="@drawable/ic_person" />
+
+        <EditText
+            android:id="@+id/edit_text_phone"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:hint="@string/phone_string"
+            android:inputType="phone" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/container_gender"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_phone">
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_gender"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:background="?attr/selectableItemBackground"
+            android:entries="@array/gender_entries"
+            android:hint="@string/full_name_string"
+            android:inputType="textEmailAddress" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_triangle_dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_blood_group"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_gender">
+
+        `
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/spinner_blood_group"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:entries="@array/blood_group_entries"
+            android:hint="@string/full_name_string"
+            android:inputType="textEmailAddress" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_triangle_dropdown" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_email"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_blood_group">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            style="@style/LoginInputFieldIconImageViewStyle"
+            android:src="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:hint="@string/email_string"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/container_password"
+        style="@style/LoginInputFieldContainerStyle"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_email">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            style="@style/LoginInputFieldIconImageViewStyle"
+            android:src="@drawable/ic_key" />
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            style="@style/LoginInputFieldEditTextStyle"
+            android:hint="@string/password_string"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_next_button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/register_string"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_password" />
+
+    <TextView
+        android:id="@+id/text_view_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/or_string"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_register" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/shape_login_page_or_divider_background"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_or"
+        app:layout_constraintEnd_toStartOf="@id/text_view_or"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_view_or" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/shape_login_page_or_divider_background"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_or"
+        app:layout_constraintTop_toTopOf="@id/text_view_or" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_or">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/already_have_account_string"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_view_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/signin_string"
+            android:textColor="@color/green_primary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
