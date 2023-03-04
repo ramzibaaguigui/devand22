@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="9dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_lab_item"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_labo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LABORATOIRE D'ANALYSES MÉDICALES DR B.AIT-CHALLAL"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alger-Centre , Alger"
+                    android:textSize="14dp" />
+
+                <RatingBar
+                    android:id="@+id/my_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_gravity="start"
+                    android:numStars="1"
+                    android:progressTint="@color/rating_bar"
+                    android:rating="1"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioButton
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:buttonTint="@color/rating_bar"
+            android:foregroundTint="@color/rating_bar"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

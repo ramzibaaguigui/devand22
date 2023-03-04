@@ -14,4 +14,13 @@
         <!-- Customize your theme here. -->
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
     </style>
+
+    <style name="Theme.DevFest.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DevFest.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DevFest.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

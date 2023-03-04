@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:dateTextAppearance="@style/CalendarDateTextAppearance"
+            android:focusedMonthDateColor="@color/green_primary"
+            android:selectedDateVerticalBar="@drawable/calendar_selected_date_bar"
+            android:selectedWeekBackgroundColor="@color/red_complementary"
+            android:shownWeekCount="6"
+            android:unfocusedMonthDateColor="@color/lightGray"
+            android:weekDayTextAppearance="@style/CalendarWeekDayTextAppearance" />
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_next_booking_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="18dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:timePickerMode="spinner" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -44,6 +44,27 @@
         <item name="android:padding">5dp</item>
     </style>
 
+    <style name="CalendarDateTextAppearance">
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style for the weekday text appearance -->
+    <style name="CalendarWeekDayTextAppearance">
+        <item name="android:textColor">@color/lightGray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <!-- Drawable for the selected date vertical bar -->
+    <drawable name="calendar_selected_date_bar">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/colorAccent" />
+            <size android:width="3dp" />
+        </shape>
+    </drawable>
+
     <style name="LoginInputFieldEditTextStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

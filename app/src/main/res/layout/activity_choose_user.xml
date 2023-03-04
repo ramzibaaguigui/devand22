@@ -39,8 +39,9 @@
             <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:id="@+id/image_view_patient"
                 android:background="@drawable/shape_type_radio_button_image_background"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
+                android:layout_margin="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
 
         </LinearLayout>
 
@@ -54,8 +55,9 @@
             <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:id="@+id/image_view_doctor"
                 android:background="@drawable/shape_type_radio_button_image_background"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
+                android:layout_margin="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
 
         </LinearLayout>
 
