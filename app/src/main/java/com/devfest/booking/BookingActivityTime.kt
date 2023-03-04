@@ -1,4 +1,4 @@
-package com.devfest.book
+package com.devfest.booking
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Artificial intelligence interpretatios"
+        android:textColor="@color/green_primary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Diagnosis : " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:text="Based on the patient's symptoms and laboratory test results,
+        John Smith has anemia, specifically iron-deficiency anemia. This is indicated by
+        his low hemoglobin and hematocrit levels, which suggest a decreased number of
+        red blood cells and less oxygen-carrying capacity. The MCV is within the normal
+         range, ruling out  other types of anemia such as megaloblastic anemia. The MCHC
+          is also normal, indicating that the red blood cells have a normal amount of
+          hemoglobin per volume. The reticulocyte count is within the normal range,
+           suggesting that the bone marrow is not responding adequately to the anemia.
+           Other causes of anemia, such as hemolytic anemia or aplastic anemia, are less
+           likely based on these results. The white blood cell and platelet counts are normal,
+            ruling out other blood disorders. Therefore, the most likely diagnosis is iron-deficiency
+             anemia, which may be caused by insufficient dietary intake of iron, blood loss,
+             or malabsorption." />
+
+</LinearLayout>
